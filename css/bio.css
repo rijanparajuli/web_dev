@@ -1,0 +1,112 @@
+body{
+	background-color: #001F46;
+}
+
+h1, h2, h3, h4, ul, p, a{
+	margin: 1%; padding: 1px;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none; 	color: white;
+}
+
+.top a{
+	color: #FDF00B;
+	padding-left: 40%;
+	padding-bottom: 5%;
+}
+
+.top a:hover{
+	background-color: transparent;
+	border-radius: 5px;
+	color: orange;
+}
+
+.menubar{ 
+	background-color: transparent;
+    margin-left: 15%; margin-bottom: 20px;
+    width: 50%;
+    font-size: 2em;
+    padding-left: 10%;
+    border-radius: 5px;
+    padding-top: 5%;
+}
+
+.menubar > ul > h3{
+	display: flex; flex-direction: row; 
+	justify-content: space-between; 
+}
+
+.menubar > ul > h3 > li > a{
+	color: #FDF00B;
+	padding: 10px; text-align: center;
+	border-radius: 5px;
+}
+
+.menubar h3 > li > a:hover{
+	color: orange; 
+	background-color: #343233; 
+	box-shadow: -10px 10px 40px black;
+}
+
+.menubar h3 > li :active{
+	color: orange;
+	background-color: ;
+}
+
+.menubar > p{
+	display: none;
+	background-color: yellow;
+}
+
+.des{
+	display: flex; flex-direction: column;
+	background: #6E85AF;
+	box-shadow: -10px 10px 40px black;
+	margin-left: 20%;
+	height: 100%;
+	width: 61%;
+	margin-top: 5%;
+}
+
+.des h1{
+	padding-left: 45%;
+	margin-bottom: 5%;
+}
+
+.des p{
+	font-size: 1.5em;
+	padding-top: 2%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 1%;
+}
+
+footer{
+	display: flex; flex-direction: row;
+	justify-content: space-between;
+	width: 99%;
+	margin: 1%;
+	margin-top: 10%;
+}
+
+.blox{
+	background-color: #1979CA;
+	border-radius: 5px;
+	box-shadow: -10px 10px 40px black;
+	width: 20%;
+	justify-content: space-between;
+	padding: 2%;
+	text-align: center;
+	font-size: 1.2em;
+	transition: width 2s;
+}
+
+.blox:hover{
+	width: 40%;
+	background-color: #013183;
+}

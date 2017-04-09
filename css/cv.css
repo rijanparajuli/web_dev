@@ -16,22 +16,24 @@ a{
 
 .top a{
 	color: #FDF00B;
-	margin-left: 40%;
-	margin-bottom: 5%;
+	padding-left: 40%;
+	padding-bottom: 5%;
 }
 
 .top a:hover{
 	background-color: transparent;
+	border-radius: 5px;
 	color: orange;
 }
 
 .menubar{ 
 	background-color: transparent;
-    margin-left: 26%; margin-bottom: 20px;
+    margin-left: 15%; margin-bottom: 20px;
     width: 50%;
-    font-size: 2em;
+    font-size: 30px;
+    padding-left: 10%;
     border-radius: 5px;
-    padding-top: 2%;
+    padding-top: 5%;
 }
 
 .menubar > ul > h3{
@@ -51,9 +53,14 @@ a{
 	box-shadow: -10px 10px 40px black;
 }
 
-.menubar h3 > li >a :active{
+.menubar h3 > li :active{
 	color: orange;
-	background-color: red;
+	background-color: ;
+}
+
+.menubar > p{
+	display: none;
+	background-color: yellow;
 }
 
 h2{
@@ -62,19 +69,18 @@ h2{
 }
 
 .des{
-	display: flex; 
-	flex-direction: row;
+	display: flex; flex-direction: column;
 	background: #6E85AF;
 	box-shadow: -10px 10px 40px black;
 	margin-left: 20%;
-	height: 450px;
-	width: 60%;
+	height: 100%;
+	width: 61%;
 	margin-top: 5%;
 }
 
 .image img{
-	height: 25.2em;
-	width: inherit;	
+	height: 100%;
+	width: 450px;	
 }
 
 .des .name{
@@ -83,19 +89,25 @@ h2{
 	padding-left: 1%;
 }
 
-.des .name h3 a{
-	color: black; 
-	font-size: 2.5em;
-	padding-left: 10%;
+.des .name a{
+	color: black; font-size: 2.5em;
+	padding-left: 13%;
 }
 
 .des .name p{
 	font-size: 1.5em;
-	padding-top: 0%;
-	padding-left: 20%;
-	padding-right: 0%;
-	width: 40%;	
-	height: 30%;
+	padding-top: 20%;
+	padding-left: 10%;
+	padding-right: 10%;
+	display: none;
+}
+.des .name:hover p{
+	display: block;
+}
+
+.des .name:hover{
+	background-color: #013183;
+	color: white;
 }
 
 .des .name:hover a{
@@ -114,64 +126,15 @@ footer{
 	background-color: #1979CA;
 	border-radius: 5px;
 	box-shadow: -10px 10px 40px black;
-	width: 45%;
+	width: 20%;
 	justify-content: space-between;
 	padding: 2%;
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 20px;
+	transition: width 2s;
 }
 
 .blox:hover{
+	width: 40%;
 	background-color: #013183;
 }
-
-@media all and (max-width: 600px){
-	body, .des{
-		flex-direction: column;
-		margin: 0; padding: 0;
-	}
-
-	footer{
-		display: flex; flex-direction: row;
-	} 
-
-	.top a{
-
-	}
-
-	.menubar > ul > h3{
-		flex-direction: column;
-		justify-content: space-between;
-		background-color: #1979CA;
-	}
-
-	.menubar > ul > h3 > li{
-		padding: 5%;
-		text-align: center;
-		margin: 2%;
-	}
-
-	.menubar{
-		padding-left:0%; margin-left:30%;
-		margin-top: 10%;
-	}
-
-	.des{
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 10%;
-		width: 100%;
-		height: 100%;
-		padding-bottom: 10%;
-		margin-top: 10%;
-	}
-	.des h3 a{
-		padding-right: 20%; 
-	}
-
-	.des p{
-		padding-right: 10%;
-	}
-
-}
-
