@@ -14,26 +14,33 @@ a{
 	text-decoration: none; 	color: white;
 }
 
+.logo{
+	margin-left: 5%;
+}
+
+.top{
+	display: flex; flex-direction: row;
+	margin-left: 35%;
+	margin-bottom: 5%;
+	margin-top: 3%;
+}
+
 .top a{
 	color: #FDF00B;
-	padding-left: 40%;
-	padding-bottom: 5%;
 }
 
 .top a:hover{
 	background-color: transparent;
-	border-radius: 5px;
 	color: orange;
 }
 
 .menubar{ 
 	background-color: transparent;
-    margin-left: 15%; margin-bottom: 20px;
+    margin-left: 26%; margin-bottom: 20px;
     width: 50%;
-    font-size: 30px;
-    padding-left: 10%;
+    font-size: 2em;
     border-radius: 5px;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 .menubar > ul > h3{
@@ -55,7 +62,7 @@ a{
 
 .menubar h3 > li :active{
 	color: orange;
-	background-color: ;
+	background-color: red;
 }
 
 .menubar > p{
@@ -78,11 +85,6 @@ h2{
 	margin-top: 5%;
 }
 
-.image img{
-	height: 100%;
-	width: 450px;	
-}
-
 .des .name{
 
 	display: flex; flex-direction: column;
@@ -99,10 +101,6 @@ h2{
 	padding-top: 20%;
 	padding-left: 10%;
 	padding-right: 10%;
-	display: none;
-}
-.des .name:hover p{
-	display: block;
 }
 
 .des .name:hover{
@@ -126,15 +124,56 @@ footer{
 	background-color: #1979CA;
 	border-radius: 5px;
 	box-shadow: -10px 10px 40px black;
-	width: 20%;
+	width: 45%;
 	justify-content: space-between;
 	padding: 2%;
 	text-align: center;
-	font-size: 20px;
-	transition: width 2s;
+	font-size: 1.2em;
 }
 
-.blox:hover{
-	width: 40%;
-	background-color: #013183;
+@media all and (max-width: 600px){
+	body, .des{
+		flex-direction: column;
+		margin: 0; padding: 0;
+	}
+
+	footer{
+		display: flex; flex-direction: row;
+	} 
+
+	.menubar > ul > h3{
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: #1979CA;
+		border-radius: 5px;
+		box-shadow: -10px 10px 40px black;
+	}
+
+	.menubar > ul > h3 > li{
+		padding: 5%;
+		text-align: center;
+		margin: 2%;
+	}
+
+	.menubar{
+		padding-left:0%; margin-left:30%;
+		margin-top: 10%;
+	}
+
+	.des{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10%;
+		width: 98%;
+		height: 100%;
+		padding-bottom: 10%;
+		margin-top: 10%;
+	}
+	.des h3 a{
+		padding-right: 20%; 
+	}
+
+	.top{
+		margin-right: 100%;
+	}
 }

@@ -14,10 +14,19 @@ a{
 	text-decoration: none; 	color: white;
 }
 
+.logo{
+	margin-left: 5%;
+}
+
+.top{
+	display: flex; flex-direction: row;
+	margin-left: 35%;
+	margin-bottom: 5%;
+	margin-top: 3%;
+}
+
 .top a{
 	color: #FDF00B;
-	margin-left: 40%;
-	margin-bottom: 5%;
 }
 
 .top a:hover{
@@ -67,8 +76,8 @@ h2{
 	background: #6E85AF;
 	box-shadow: -10px 10px 40px black;
 	margin-left: 20%;
-	height: 450px;
-	width: 60%;
+	height: 100%;
+	width: 61%;
 	margin-top: 5%;
 }
 
@@ -121,10 +130,6 @@ footer{
 	font-size: 1.2em;
 }
 
-.blox:hover{
-	background-color: #013183;
-}
-
 @media all and (max-width: 600px){
 	body, .des{
 		flex-direction: column;
@@ -135,14 +140,12 @@ footer{
 		display: flex; flex-direction: row;
 	} 
 
-	.top a{
-
-	}
-
 	.menubar > ul > h3{
 		flex-direction: column;
 		justify-content: space-between;
 		background-color: #1979CA;
+		border-radius: 5px;
+		box-shadow: -10px 10px 40px black;
 	}
 
 	.menubar > ul > h3 > li{
@@ -160,7 +163,7 @@ footer{
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 10%;
-		width: 100%;
+		width: 98%;
 		height: 100%;
 		padding-bottom: 10%;
 		margin-top: 10%;
@@ -172,6 +175,12 @@ footer{
 	.des p{
 		padding-right: 10%;
 	}
+	.img{
+		width: 100%;
+	}
 
+	.top{
+		margin-right: 100%;
+	}
 }
 
