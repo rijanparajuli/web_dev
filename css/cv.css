@@ -1,5 +1,5 @@
 body{
-	background-color: #001F46;
+	background-color: #001F46; font-family: 'Acme', sans-serif;
 }
 
 h1, h2, h3, h4, ul, p, a{
@@ -41,6 +41,7 @@ a{
     font-size: 2em;
     border-radius: 5px;
     padding-top: 2%;
+    font-family: 'Exo', sans-serif;
 }
 
 .menubar > ul > h3{
@@ -83,6 +84,9 @@ h2{
 	height: 100%;
 	width: 61%;
 	margin-top: 5%;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	font-size: 1.1em;
 }
 
 .des .name{
